@@ -1,6 +1,4 @@
 body{
-    
-    background: url("resources/background_red_light.png");
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   /*-moz-osx-font-smoothing: grayscale;   */
@@ -229,9 +227,6 @@ h3{
 
   /* form issuing and receiveing end */
 
-  body {
-    background-image:url(resources\background_red_light.png);
-  }
   .login-one-form {
     transform:translate(-50%, -50%);
     top:50%;
