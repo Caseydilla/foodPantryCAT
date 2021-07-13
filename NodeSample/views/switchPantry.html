@@ -17,8 +17,9 @@
     padding:15px 0 15px 0;
     margin:auto;
     margin-top: 120px;
-    width:500px;
+    width: 65%;
     animation: transitionIn .75s;
+    background-color:#fff;
 }
 
 /*the container must be positioned relative:*/
@@ -28,13 +29,13 @@
   margin: auto;
 }
 
+select-selected{
+  color: black;
+}
 .custom-select select {
   display: none; /*hide original SELECT element:*/
 }
 
-.select-selected {
-  background-color: DodgerBlue;
-}
 
 /*style the arrow inside the select element:*/
 .select-selected:after {
@@ -56,8 +57,7 @@
 
 /*style the items (options), including the selected item:*/
 .select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
+  color: black;
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
@@ -112,7 +112,7 @@
 <h2>Switch Pantry</h2>
 
 <!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
-<div class="custom-select" style="width:200px;">
+<div class="custom-select" style="width:200px; color:black">
   <select>
     <option value="0">Select School:</option>
     <option value="1">Lakewood HS</option>
@@ -120,6 +120,10 @@
     <option value="3">Hollins HS</option>
   </select>
 </div>
+<br>
+<button class="au-btn au-btn-icon au-btn--blue" onclick="loadAddItem()">
+  <i class="zmdi zmdi-plus"></i>add item</button>
+
 
 <script>
 var x, i, j, l, ll, selElmnt, a, b, c;
