@@ -113,46 +113,6 @@ button {
 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #333333;
-    font-weight: 700;
-    margin: 0;
-    line-height: 1.2;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-size: 18px;
-}
-
-h5 {
-    font-size: 15px;
-}
-
-h6 {
-    font-size: 13px;
-}
-
-blockquote {
-    margin: 0;
-}
-
 strong {
     font-weight: 700;
 }
