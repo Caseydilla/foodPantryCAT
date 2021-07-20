@@ -11,6 +11,7 @@
       name="viewport"
       content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1"/>
         <link rel="stylesheet" type="text/css" href="/scannerResources/style.css" />
+        <link rel="stylesheet" type="text/css" href="/scannerResources/modal.css" />
     
   </head>
   
@@ -46,6 +47,33 @@
 
         <!--This is the table that the items get put into-->
         <text>Items</text>
+        <br>
+        <a href="#openModal">Scanner not working? Click here to manually add items.</a>
+        <div id="openModal" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2 style="padding-top: 10px;">Add item</h2>
+            <div class="form">
+              <form action="/action_page.php">
+                <label for="item">Item:</label>
+                <input type="text" id="item" name="food" placeholder="Banana, Canned Corn, etc...">
+            
+                <label for="lname">Macro:</label>
+                <select id="macro" name="macro">
+                  <option value="carb">Carb (ex. Bread, Pasta, Cereal)</option>
+                  <option value="protein">Protein (ex. Meat or Eggs)</option>
+                  <option value="fat">Fat (ex. Oils, Dairy, Nuts)</option>
+                </select>
+            
+                <label for="country">Qty:</label>
+                <input type="text" id="qty" name="qty" placeholder="1, 2, 3, etc...">
+
+              
+                <input type="submit" value="Add to Cart">
+              </form>
+            </div>
+          </div>
+        </div>
         <div id="Table">
           <div id="listID" style="font-family: 'Noto Sans', 'Helvetica'; font-size: 20px; color:  #236dad; margin-top: -4vh; text-align: center; margin-right: auto; margin-left: auto; display: block;">
           
